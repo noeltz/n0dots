@@ -29,6 +29,7 @@ pacman = [
   "flatpak",
   "fzf",
   "git",
+  "github-cli",
   "gnome-keyring",
   "gst-plugin-pipewire",
   "hyprlock",
