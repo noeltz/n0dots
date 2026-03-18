@@ -1,7 +1,7 @@
 input {
     keyboard {
         xkb {
-             layout "us,th"
+             layout "de"
              // options "ctrl:nocaps"
         }
         repeat-delay 300
