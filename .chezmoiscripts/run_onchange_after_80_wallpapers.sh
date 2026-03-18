@@ -20,7 +20,7 @@ readonly LIB_DIR="${CHEZMOI_SOURCE_DIR:-$(chezmoi source-path)}/.chezmoiscripts/
 # shellcheck source=/dev/null
 source "$LIB_DIR/.lib-common.sh"
 
-readonly WALLPAPERS_DIR="${HOME}/Pictures/Wallpapers"
+readonly WALLPAPERS_DIR="${HOME}/Pictures/Wallpaper"
 readonly WALLPAPERS_URL="https://github.com/noeltz/wallpapers/releases/latest/download/wallpapers.zip"
 
 cleanup() {
