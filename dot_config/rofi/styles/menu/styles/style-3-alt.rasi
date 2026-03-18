@@ -1,0 +1,12 @@
+@import "~/.config/rofi/styles/menu/styles/style-3.rasi"
+
+// Alternate variant to style-3 with mode-switcher on the left
+
+mainbox {
+  orientation:                 horizontal;
+  children:                    [ "modebox", "dummybox" ];
+}
+
+modebox {
+  border:                      0px 1px 0px 0px;    
+}

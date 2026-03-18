@@ -1,0 +1,12 @@
+include "input.kdl"
+include "layout.kdl"
+include "animations.kdl"
+include "misc.kdl"
+include "rules.kdl"
+include "keybinds.kdl"
+include "startup.kdl"
+include "named-workspaces.kdl"
+include "recent-windows.kdl"
+
+// Auto-generated colors from matugen: DO NOT EDIT
+include "matugen-colors.kdl"

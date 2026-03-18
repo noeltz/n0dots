@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+# A simple script to display a battery icon
+
+# Function to display usage information
+usage() {
+  cat <<USAGE
+Usage: battery.sh [OPTIONS]
+
+Options:
+  icon          Display the battery icon
+  percentage    Display the battery percentage
+  int           Display the battery percentage as an integer
+  status        Display the battery status (Charging, Discharging, etc.)
+  status-icon   Display an icon representing the battery status
+  -h, --help    Display this help message
+USAGE
+}
+
+# Check for help option
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+  usage
+  exit 0
+fi
+
+total_capacity=0
+battery_count=0
+
+# Find the first available battery
+battery_path=""
+for bat in /sys/class/power_supply/BAT*; do
+  if [[ -d "$bat" ]]; then
+    battery_path="$bat"
+    break
+  fi
+done
+
+for capacity in /sys/class/power_supply/BAT*/capacity; do
+  if [[ -f "$capacity" ]]; then
+    total_capacity=$((total_capacity + $(<"$capacity")))
+    battery_count=$((battery_count + 1))
+  fi
+done
+
+if ((battery_count == 0)); then
+  average_capacity="-- "
+  battery_status="No battery"
+  no_battery=true
+else
+  # Determine the icon based on average capacity
+  average_capacity=$((total_capacity / battery_count))
+  index=$((average_capacity / 10))
+
+  # Define icons for charging, discharging, and status
+  # Charging icons from 0% to 100% (last icons repeated to fill 11 levels)
+  charging_icons=("󰢟" "󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅")
+  discharging_icons=("󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹")
+  status_icons=("󰂇" "X" "󰁹" "") # Add appropriate icons for different statuses
+
+  battery_status=$(cat "$battery_path/status")
+  [ "$battery_status" = "Not charging" ] && battery_status="Plugged"
+fi
+
+# Parse format options
+formats=("$@")
+
+# Function to output the appropriate information based on format option
+output_format() {
+  case "$1" in
+  icon)
+    if [ "$no_battery" ]; then
+      echo -n "󱉝"
+    else
+      if [ "$battery_status" = "Discharging" ]; then
+        echo -n "${discharging_icons[$index]} "
+      else
+        echo -n "${charging_icons[$index]} "
+      fi
+    fi
+    ;;
+  percentage)
+    echo -n "$average_capacity% "
+    ;;
+  int)
+    echo -n "$average_capacity "
+    ;;
+  status)
+    echo -n "$battery_status "
+    ;;
+  status-icon)
+    case "$battery_status" in
+    "Charging")
+      echo -n "${status_icons[0]} "
+      ;;
+    "Discharging")
+      echo -n "${status_icons[1]} "
+      ;;
+    "Full")
+      echo -n "${status_icons[2]} "
+      ;;
+    "No battery")
+      echo -n "󱉝 "
+      ;;
+    *)
+      echo -n "${status_icons[3]} "
+      ;;
+    esac
+    ;;
+  *)
+    echo "Invalid format option: $1. Use 'icon', 'percentage', 'int', 'status', or 'status-icon'."
+    exit 1
+    ;;
+  esac
+}
+
+# Output the information based on provided format options
+if [ ${#formats[@]} -eq 0 ]; then
+  output_format "icon"
+else
+  for format in "${formats[@]}"; do
+    output_format "$format"
+  done
+  echo
+fi

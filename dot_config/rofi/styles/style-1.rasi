@@ -1,0 +1,180 @@
+/*****----- Configuration -----*****/
+
+configuration {
+  modi:                        "drun,run,filebrowser,window";
+  font:                        "Inter Variable, CaskaydiaCove Nerd Font Propo 10";
+  show-icons:                  true;
+  scroll-method:               1;
+  display-drun:                "󰀻";
+  display-run:                 "";
+  display-filebrowser:         "";
+  display-window:              "";
+  drun-display-format:         "{name}";
+  window-format:               "{t}";
+}
+
+?import                        "~/.config/rofi/colors.rasi"
+
+* {
+  text-color:                  @on-surface;
+  placeholder-color:           @outline;
+  background-color:            @surface;
+  border-radius:               0px;
+}
+
+/*****----- Main Window -----*****/
+
+window {
+  transparency:                "real";
+  location:                    center;
+  anchor:                      center;
+  fullscreen:                  false;
+  width:                       500px;
+  x-offset:                    0px;
+  y-offset:                    0px;
+  enabled:                     true;
+  border:                      2px solid;
+  border-color:                @primary;
+  cursor:                      "default";
+}
+
+/*****----- Main Box -----*****/
+
+mainbox {
+  enabled:                     true;
+  spacing:                     0px;
+  padding:                     15px;
+  background-color:            inherit;
+  orientation:                 vertical;
+  children:                    [ "inputbar", "message", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+
+inputbar {
+  enabled:                     true;
+  spacing:                     10px;
+  orientation:                 horizontal;
+  children:                    [ "textbox-prompt-colon", "entry", "mode-switcher" ];
+}
+
+textbox-prompt-colon {
+  enabled:                     true;
+  padding:                     5px 10px;
+  margin:                      0px;
+  expand:                      false;
+  str:                         "";
+  background-color:            @surface-container;
+}
+
+entry {
+  enabled:                     true;
+  margin:                      0px;
+  padding:                     5px 10px;
+  background-color:            @surface-container;
+  cursor:                      text;
+  placeholder:                 "Search...";
+}
+
+/*****----- Listview -----*****/
+
+listview {
+  enabled:                     true;
+  columns:                     1;
+  lines:                       8;
+  cycle:                       true;
+  dynamic:                     true;
+  scrollbar:                   false;
+  layout:                      vertical;
+  reverse:                     false;
+  fixed-height:                false;
+  fixed-columns:               true;
+  margin:                      10px 0px 0px 0px;
+  spacing:                     6px;
+  cursor:                      "default";
+}
+
+scrollbar {
+  handle-width:                5px ;
+  margin:                      0px 0px 0px 5px;
+  handle-color:                @surface-variant;
+  background-color:            inherit;
+}
+
+/*****----- Elements -----*****/
+
+element {
+  enabled:                     true;
+  spacing:                     10px;
+  margin:                      0px;
+  padding:                     5px 10px;
+  cursor:                      pointer;
+}
+
+element selected {
+  background-color:            @primary;
+  text-color:                  @on-primary;
+}
+
+element-icon {
+  background-color:            transparent;
+  text-color:                  inherit;
+  size:                        24px;
+  cursor:                      inherit;
+}
+
+element-text {
+  background-color:            transparent;
+  text-color:                  inherit;
+  highlight:                   inherit;
+  cursor:                      inherit;
+  vertical-align:              0.5;
+  horizontal-align:            0.0;
+}
+
+/*****----- Mode Switcher -----*****/
+
+mode-switcher {
+  enabled:                     true;
+  spacing:                     0px;
+  margin:                      0px;
+  padding:                     0px;
+  background-color:            inherit;
+  text-color:                  inherit;
+}
+
+button {
+  expand:                      false;
+  padding:                     5px 10px;
+  background-color:            inherit;
+  text-color:                  inherit;
+  cursor:                      pointer;
+}
+
+button selected {
+  background-color:            @primary;
+  text-color:                  @on-primary;
+}
+
+/*****----- Message -----*****/
+
+message {
+  enabled:                     true;
+  margin:                      10px 0px 0px 0px;
+  padding:                     0px;
+  border:                      0px;
+}
+
+textbox {
+  padding:                     8px 10px;
+  background-color:            @surface-container;
+  vertical-align:              0.5;
+  horizontal-align:            0.0;
+  highlight:                   none;
+  blink:                       true;
+  markup:                      true;
+}
+
+error-message {
+  padding:                     10px;
+}
