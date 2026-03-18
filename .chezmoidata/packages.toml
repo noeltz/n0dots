@@ -92,7 +92,12 @@ pacman = [
   "xsettingsd",
   "xwayland-satellite",
   "yazi",
-  "zsh"
+  "zsh",
+  "qt6ct-kde",
+  "helium-browser-bin",
+  "chromium-widevine",
+  "pinta",
+  "vscodium-marketplace"
 ]
 aur = [
   "bibata-cursor-theme-bin",
