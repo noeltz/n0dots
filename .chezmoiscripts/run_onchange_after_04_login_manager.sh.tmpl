@@ -98,16 +98,6 @@ EOF
 }
 
 main() {
-  if [[ "${DISTRO_FAMILY,,}" == *fedora* ]]; then
-    print_box "Display Manager"
-    log STEP "Display Manager Configuration"
-    log SKIP "Fedora distro detected, skipping Ly configuration"
-
-    if [[ "${COMPOSITOR,,}" == "niri" ]]; then
-      setup_niri_session
-    fi
-    return 0
-  fi
 
   print_box "LY"
   log STEP "Ly Configuration"
@@ -122,10 +112,6 @@ main() {
   fi
 
   disable_getty_tty2
-
-  # if [[ "${COMPOSITOR,,}" == "niri" ]]; then
-    # setup_niri_session
-  # fi
 
   log INFO "Ly display manager configuration complete"
 }
