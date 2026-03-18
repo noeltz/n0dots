@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 08_wallpapers.sh - Download and install wallpapers
 #
-# Downloads wallpapers from GitHub releases and extracts them to ~/Pictures/Wallpapers.
+# Downloads wallpapers from GitHub releases and extracts them to ~/Pictures/Wallpaper.
 # Skips download if wallpapers directory already exists and contains files.
 #
 # Globals:
