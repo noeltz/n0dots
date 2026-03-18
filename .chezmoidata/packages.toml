@@ -24,6 +24,7 @@ pacman = [
   "fastfetch",
   "fd",
   "ffmpegthumbs",
+  "figlet",
   "firefox",
   "fish",
   "flatpak",
