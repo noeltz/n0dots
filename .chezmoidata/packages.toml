@@ -44,6 +44,7 @@ pacman = [
   "libnotify",
   "libpulse",
   "libqalculate",
+  "ly",
   "man-db",
   "man-pages",
   "matugen",
