@@ -1,1 +1,11 @@
+#!/usr/bin/env bash
 
+set -euo pipefail
+
+echo -e "Adding Widevine DRM support for Helium Browser"
+if [[ -d /usr/lib/chromium/WidevineCdm && -d /opt/helium-browser-bin ]]; then
+  sudo ln -sfn /usr/lib/chromium/WidevineCdm /opt/helium-browser-bin/WidevineCdm
+  echo -e "WidevineCdm symlink created successfully"
+else
+  echo -e "WidevineCdm or Helium browser directory missing; skipping DRM link"
+fi
