@@ -118,5 +118,6 @@ aur = [
   "waypaper",
   "wlogout",
   "xdg-terminal-exec",
+  "youtui-player",
   "zen-browser-bin"
 ]
