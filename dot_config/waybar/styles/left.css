@@ -150,6 +150,7 @@ window#waybar.main-bar #custom-seperator-vertical {
 }
 
 #workspaces button {
+    font-family: "Monaspace Neon NF";
     text-shadow: none;
     box-shadow: none;
     min-width: 0px;
@@ -165,7 +166,7 @@ window#waybar.main-bar #custom-seperator-vertical {
 
 #workspaces button label {
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Monaspace Neon NF";
     font-size: 0px;
 }
 
