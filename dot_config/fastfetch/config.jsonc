@@ -3,7 +3,7 @@
   "logo": {
     "source": "~/.config/fastfetch/n0logo.txt",
     "color": {
-        "1": "bright_blue",
+        "1": "blue",
         "2": "magenta",
         "3": "cyan",
         "4": "bright_magenta"
@@ -19,7 +19,7 @@
         {
             "type": "custom",
             "format": "╭─────system─────",
-            "outputColor": "cyan"
+            "outputColor": "bright_magenta"
         },
         {
 	        "type": "uptime",
@@ -40,7 +40,7 @@
         {
             "type": "custom",
             "format": "╭────software────",
-            "outputColor": "magenta"
+            "outputColor": "blue"
         },
         {
             "type": "packages",
@@ -61,7 +61,7 @@
         {
             "type": "custom",
             "format": "╭────hardware────",
-            "outputColor": "blue"
+            "outputColor": "magenta"
         },
         {
             "type": "cpu",
