@@ -5,8 +5,8 @@
     "color": {
         "1": "cyan",
         "2": "magenta",
-        "3": "yellow",
-        "4": "green"
+        "3": "blue",
+        "4": "bright cyan"
         },
 		"padding":
 		{
