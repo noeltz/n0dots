@@ -75,7 +75,7 @@ menuitem arrow {
 
 menuitem label {
 	font-size: 12px;
-	font-family: "Inter Variable";
+	font-family: "Monaspace Neon NF";
 }
 
 menuitem:hover {
@@ -96,7 +96,7 @@ window#waybar.main-bar .modules-right {
 
 window#waybar.main-bar #pill .alt {
 	font-size: 11px;
-	font-family: "Inter Variable";
+	font-family: "Monaspace Neon NF";
 	font-feature-settings: "tnum";
 }
 
