@@ -95,11 +95,10 @@ pacman = [
   "xwayland-satellite",
   "yazi",
   "zsh",
-  "qt6ct-kde",
   "helium-browser-bin",
   "chromium-widevine",
   "pinta",
-  "vscodium-marketplace"
+  "otf-monaspace-nerdfonts"
 ]
 aur = [
   "bibata-cursor-theme-bin",
