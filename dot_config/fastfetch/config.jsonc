@@ -3,7 +3,7 @@
   "logo": {
     "source": "~/.config/fastfetch/n0logo.txt",
     "color": {
-        "1": "blue",
+        "1": "bright_blue",
         "2": "magenta",
         "3": "cyan",
         "4": "bright_magenta"
