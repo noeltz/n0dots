@@ -111,6 +111,7 @@ aur = [
   "spicetify-cli",
   "spicetify-marketplace-bin",
   "spotify",
+  "ttf-tabler-icons",
   "vesktop-bin",
   "vscodium-bin",
   "vscodium-bin-marketplace",
