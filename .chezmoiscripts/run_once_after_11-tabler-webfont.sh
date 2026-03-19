@@ -20,7 +20,7 @@ DOWNLOAD_DIR=$(mktemp -d)
 
 # Font Files to download from GitHub Master Branch
 # Using raw.githubusercontent.com for direct download
-BASE_URL="https://raw.githubusercontent.com/tabler/tabler-icons/master/fonts/webfont"
+BASE_URL="https://raw.githubusercontent.com/tabler/tabler-icons/master/packages/icons-font/fonts"
 FILES=(
     "tabler-icons.ttf"
     "tabler-icons-filled.ttf"
