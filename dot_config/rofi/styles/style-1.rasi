@@ -2,7 +2,7 @@
 
 configuration {
   modi:                        "drun,run,filebrowser,window";
-  font:                        "Inter Variable, CaskaydiaCove Nerd Font Propo 10";
+  font:                        "Monaspace Neon NF 10";
   show-icons:                  true;
   scroll-method:               1;
   display-drun:                "󰀻";
