@@ -42,7 +42,7 @@ output_path = '~/.config/vesktop/themes/system24-matugen.css'
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty.conf'
 output_path = '~/.config/kitty/matugen-theme.conf'
-post_hook = 'pkill -USR1 kitty'
+post_hook = 'python3 ~/.loacl/bin/dank16.py {{colors.primary.default.hex}} --kitty >> ~/.config/kitty/matugen-theme.conf && pkill -USR1 kitty'
 
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
