@@ -32,7 +32,7 @@ switch_wallpaper() {
 
   [ ! -d "$cache_dir/niri/landing" ] && mkdir -p "$cache_dir/niri/landing"
   if [[ "$1" != "$(readlink -f "$cache_dir/niri/landing/background")" || "$scheme" ]]; then
-    scheme=${scheme:-"scheme-content"}
+    scheme=${scheme:-"scheme-vibrant"}
 
     # fallback to prefer-light if color-scheme is default
     if [ "$current_theme" = "'default'" ]; then
