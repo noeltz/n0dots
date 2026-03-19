@@ -9,3 +9,5 @@ if [[ -d /usr/lib/chromium/WidevineCdm && -d /opt/helium-browser-bin ]]; then
 else
   echo -e "WidevineCdm or Helium browser directory missing; skipping DRM link"
 fi
+
+sudo mkdir -p /etc/chromium/policies/managed
