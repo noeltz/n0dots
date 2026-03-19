@@ -99,7 +99,7 @@ output_path = '~/.vscode-oss/extensions/satanalphabet.matugen-vscode-1.1.0/theme
 
 [templates.helium-policy]
 input_path = '~/.config/matugen/templates/chromium-colors.json'
-output_path = '~/.cache/matugen/chromium/colors.json'
+output_path = '~/.local/share/color-schemes/chromium.json'
 post_hook = 'helium-browser --refresh-platform-policy --no-startup-window'
 
 [templates.zen-userChrome]
