@@ -1,5 +1,5 @@
 * {
-	font-family: "CaskaydiaCove Nerd Font Propo";
+	font-family: "Monaspace Neon NF";
 	font-size: 16px;
 }
 
@@ -74,7 +74,7 @@ menuitem arrow {
 
 menuitem label {
 	font-size: 12px;
-	font-family: "Inter Variable";
+	font-family: "Monaspace Neon NF";
 }
 
 menuitem:hover {
@@ -95,7 +95,7 @@ window#waybar.main-bar .modules-right {
 
 window#waybar.main-bar #pill .alt {
 	font-size: 11px;
-	font-family: "Inter Variable";
+	font-family: "Monaspace Neon NF";
 	font-feature-settings: "tnum";
 }
 
@@ -164,7 +164,7 @@ window#waybar.main-bar #custom-seperator-vertical {
 
 #workspaces button label {
 	font-weight: 500;
-	font-family: "Roboto";
+	font-family: "Monaspace Neon NF";
 	font-size: 0px;
 }
 
@@ -198,7 +198,7 @@ window#waybar.main-bar #custom-seperator-vertical {
 window#waybar.main-bar #clock {
 	background: transparent;
 	font-size: 16px;
-	font-family: "Inter Variable";
+	font-family: "Monaspace Neon NF";
 	font-feature-settings: "tnum";
 	padding: 0px;
 	font-weight: 300;
@@ -254,7 +254,7 @@ window#waybar.date-widget {
 window#waybar.time-widget .module,
 window#waybar.date-widget .module {
 	background: transparent;
-	font-family: "Inter Variable";
+	font-family: "Monaspace Neon NF";
 	color: @primary-fixed-dim;
 }
 
