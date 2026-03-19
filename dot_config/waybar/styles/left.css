@@ -275,7 +275,7 @@ window#waybar #clock.widget-time {
 }
 
 window#waybar #clock.widget-date {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
     padding: 8px 0px;
     margin: 0px 20px;
