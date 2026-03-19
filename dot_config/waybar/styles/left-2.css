@@ -1,5 +1,5 @@
 * {
-	font-family: "Monaspace Neon NF";
+	font-family: "CaskaydiaCove Nerd Font Propo";
 	font-size: 16px;
 }
 
@@ -75,7 +75,7 @@ menuitem arrow {
 
 menuitem label {
 	font-size: 12px;
-	font-family: "Monaspace Neon NF";
+	font-family: "Inter Variable";
 }
 
 menuitem:hover {
@@ -96,7 +96,7 @@ window#waybar.main-bar .modules-right {
 
 window#waybar.main-bar #pill .alt {
 	font-size: 11px;
-	font-family: "Monaspace Neon NF";
+	font-family: "Inter Variable";
 	font-feature-settings: "tnum";
 }
 
