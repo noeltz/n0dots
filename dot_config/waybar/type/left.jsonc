@@ -76,7 +76,7 @@
 		},
 		"custom/launcher": {
 			"justify": "center",
-			"format": "",
+			"format": "№",
 			"tooltip-format": "Application Launcher\nRight click for more actions",
 		},
 		"battery": {
@@ -262,7 +262,7 @@
 		"exclusive": false,
 		"modules-right": ["clock#widget-time"],
 		"clock#widget-time": {
-			"format": "{:%I:%M %p}",
+			"format": "{:%H:%M %p}",
 			"tooltip": false,
 		},
 	},
