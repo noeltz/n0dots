@@ -111,6 +111,7 @@ window#waybar.main-bar .modules-right #pill .alt {
 
 window#waybar.main-bar #custom-launcher {
 	font-size: 20px;
+	font-family: "Inter Variable";
 	background: transparent;
 	color: @primary;
 }
