@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
+
+shopt -s nullglob globstar
+
+readonly LIB_DIR="${CHEZMOI_SOURCE_DIR:-$(chezmoi source-path)}/.chezmoiscripts/lib"
+
+# shellcheck source=/dev/null
+source "$LIB_DIR/.lib-common.sh"
 
 # --- CONFIGURATION ---
 FONT_DIR="$HOME/.local/share/fonts"
@@ -11,6 +18,9 @@ GITHUB_REPOS=(
     #noeltz/custom-maple-font
 )
 # ---------------------
+
+print_box "Fonts"
+log STEP "Installing Maple Mono NerdFonts..."
 
 mkdir -p "$FONT_DIR"
 TEMP_DIR=$(mktemp -d)
@@ -34,3 +44,4 @@ for url in "${ALL_ZIPS[@]}"; do
 done
 
 fc-cache -f
+log INFO "Installed Fonts to $FONT_DIR"
