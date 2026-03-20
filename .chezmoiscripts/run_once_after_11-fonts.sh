@@ -58,5 +58,5 @@ for url in "${FONTS_URLS[@]}"; do
     cp "$(basename "$url")" "$FONT_DIR"
 done
 
-fc-cache -f
+fc-cache -fv
 log INFO "Installed Fonts to $FONT_DIR"
