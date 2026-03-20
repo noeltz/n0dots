@@ -1,7 +1,7 @@
 [gtk]
 colorScheme = "prefer-dark"
 cursorTheme = "Bibata-Modern-Ice"
-fontName = "Monaspace Neon NF 10"
-monospaceFontName = "Monaspace Neon NF 9"
+fontName = "Maple Mono NF"
+monospaceFontName = "Maple Mono NF"
 gtkTheme = "adw-gtk3-dark"
 iconTheme = "Adwaita"
