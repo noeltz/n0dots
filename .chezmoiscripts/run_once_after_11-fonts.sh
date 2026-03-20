@@ -15,7 +15,7 @@ ZIP_URLS=(
     https://github.com/noeltz/custom-maple-font/releases/latest/download/NFP_MapleMonoNormal-NF.zip
 )
 TTF_URLS=(
-    https://app.unpkg.com/@tabler/icons-webfont@2.47.0/files/fonts/tabler-icons.ttf
+    https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/fonts/tabler-icons.ttf
 )
 
 GITHUB_REPOS=(
