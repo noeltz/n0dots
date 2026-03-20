@@ -76,7 +76,7 @@
 		},
 		"custom/launcher": {
 			"justify": "center",
-			"format": "№",
+			"format": "\u2116",
 			"tooltip-format": "Application Launcher\nRight click for more actions",
 		},
 		"battery": {
