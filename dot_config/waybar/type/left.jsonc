@@ -262,7 +262,7 @@
 		"exclusive": false,
 		"modules-right": ["clock#widget-time"],
 		"clock#widget-time": {
-			"format": "{:%H:%M %p}",
+			"format": "{:%H:%M}",
 			"tooltip": false,
 		},
 	},
