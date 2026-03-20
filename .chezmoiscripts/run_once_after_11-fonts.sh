@@ -13,6 +13,7 @@ FONT_DIR="$HOME/.local/share/fonts"
 ZIP_URLS=(
     https://github.com/noeltz/custom-maple-font/releases/latest/download/NFM_MapleMonoNormal-NF.zip
     https://github.com/noeltz/custom-maple-font/releases/latest/download/NFP_MapleMonoNormal-NF.zip
+    https://app.unpkg.com/@tabler/icons-webfont@2.47.0/files/fonts/tabler-icons.ttf
 )
 GITHUB_REPOS=(
     #noeltz/custom-maple-font
@@ -20,7 +21,7 @@ GITHUB_REPOS=(
 # ---------------------
 
 print_box "Fonts"
-log STEP "Installing Maple Mono NerdFonts..."
+log STEP "Installing Fonts..."
 
 mkdir -p "$FONT_DIR"
 TEMP_DIR=$(mktemp -d)
