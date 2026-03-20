@@ -14,8 +14,9 @@ ZIP_URLS=(
     https://github.com/noeltz/custom-maple-font/releases/latest/download/NFM_MapleMonoNormal-NF.zip
     https://github.com/noeltz/custom-maple-font/releases/latest/download/NFP_MapleMonoNormal-NF.zip
 )
-TTF_URLS=(
-    https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/fonts/tabler-icons.ttf
+
+FONT_URLS=(
+    https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/fonts/tabler-icons.woff2
 )
 
 GITHUB_REPOS=(
@@ -49,10 +50,10 @@ for url in "${ALL_ZIPS[@]}"; do
     find . -type f -iname "*.ttf" -exec cp {} "$FONT_DIR" \;
 done
 
-# Process direct TTF files
-for url in "${TTF_URLS[@]}"; do
+# Process direct Font files
+for url in "${FONTS_URLS[@]}"; do
     [[ -z "$url" ]] && continue
-    echo "Downloading TTF: $url"
+    echo "Downloading Font: $url"
     curl -L -s -O "$url"
     cp "$(basename "$url")" "$FONT_DIR"
 done
