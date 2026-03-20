@@ -42,6 +42,7 @@ done
 # Process ZIP files
 for url in "${ALL_ZIPS[@]}"; do
     [[ -z "$url" ]] && continue
+    echo "Downloading ZIP: $url"
     curl -L -s -O "$url"
     zip_file=$(basename "$url")
     unzip -q -o "$zip_file"
