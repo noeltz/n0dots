@@ -13,8 +13,11 @@ FONT_DIR="$HOME/.local/share/fonts"
 ZIP_URLS=(
     https://github.com/noeltz/custom-maple-font/releases/latest/download/NFM_MapleMonoNormal-NF.zip
     https://github.com/noeltz/custom-maple-font/releases/latest/download/NFP_MapleMonoNormal-NF.zip
+)
+TTF_URLS=(
     https://app.unpkg.com/@tabler/icons-webfont@2.47.0/files/fonts/tabler-icons.ttf
 )
+
 GITHUB_REPOS=(
     #noeltz/custom-maple-font
 )
@@ -36,12 +39,21 @@ for repo in "${GITHUB_REPOS[@]}"; do
     done < <(curl -s "https://api.github.com/repos/${repo}/releases/latest" | jq -r '.assets[] | select(.name | endswith(".zip")) | .browser_download_url')
 done
 
+# Process ZIP files
 for url in "${ALL_ZIPS[@]}"; do
     [[ -z "$url" ]] && continue
     curl -L -s -O "$url"
     zip_file=$(basename "$url")
     unzip -q -o "$zip_file"
     find . -type f -iname "*.ttf" -exec cp {} "$FONT_DIR" \;
+done
+
+# Process direct TTF files
+for url in "${TTF_URLS[@]}"; do
+    [[ -z "$url" ]] && continue
+    echo "Downloading TTF: $url"
+    curl -L -s -O "$url"
+    cp "$(basename "$url")" "$FONT_DIR"
 done
 
 fc-cache -f
