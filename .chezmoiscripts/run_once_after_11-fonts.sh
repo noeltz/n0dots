@@ -51,7 +51,7 @@ for url in "${ALL_ZIPS[@]}"; do
 done
 
 # Process direct Font files
-for url in "${FONTS_URLS[@]}"; do
+for url in "${FONT_URLS[@]}"; do
     [[ -z "$url" ]] && continue
     echo "Downloading Font: $url"
     curl -L -s -O "$url"
