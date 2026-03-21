@@ -26,8 +26,8 @@ style = "foreground"
 # Directory
 # ------------------------
 [directory]
-format = "[ $path](magenta) "
-style = "magenta"
+format = "[ $path]($style) "
+style = "blue"
 truncation_length = 3
 truncate_to_repo = true
 truncation_symbol = "…/"
