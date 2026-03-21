@@ -74,6 +74,8 @@ pacman = [
   "rofi",
   "rofi-calc",
   "rofi-emoji",
+  "sheldon",
+  "starship",
   "swayidle",
   "swaync",
   "swww",
