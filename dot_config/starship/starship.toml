@@ -1,77 +1,71 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
-
-
-add_newline = false
-
-
-format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_state\
-$git_status\
-$git_metrics\
-$git_commit\
-$line_break\
-$status\
-$character"""
-
-right_format = """
-$time\
-$cmd_duration\
-"""
+add_newline = true
+command_timeout = 200
+format = "[$os$directory$git_branch$git_status]($style)$character"
 
 [character]
-  success_symbol            = "[➜](bold green)"
-  error_symbol              = "[➜](bold red)"
-  vimcmd_symbol             = "[❮](bold green)"
-  vimcmd_visual_symbol      = "[❮](bold yellow)"
-  vimcmd_replace_one_symbol = "[❮](bold purple)"
-
+error_symbol = "[✗](bold cyan)"
+success_symbol = "[❯](bold cyan)"
+vicmd_symbol = "[❮](bold cyan)"
 
 [directory]
-  truncation_length = 3
-  read_only         = " 󰌾"
-
-[username]
-  show_always = true
-  format      = '[$user]($style) in '
-
-
-[hostname]
-  disabled = false
-  format   = "[$ssh_symbol$hostname]($style) in "
-
-[status]
-  format   = '[$symbol ]($style)'
-  disabled = false
-  symbol   = ""
-
-
-[cmd_duration]
-  min_time = 5000
-  format   = "[󰔟 $duration](bold yellow)"
-
-
-[git_metrics]
-  disabled      = false
-  added_style   = "green"
-  deleted_style = "red"
+truncation_length = 3
+truncation_symbol = "…/"
+repo_root_style = "bold cyan"
+repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
-  symbol = " "
+format = "[$branch]($style) "
+style = "italic cyan"
 
 [git_status]
-  format    = '([\[$all_status$ahead_behind\]]($style) )'
-  style     = "red bold"
-  ahead     = '⇡${count} '
-  behind    = '⇣${count} '
-  diverged  = '⇕⇡${ahead_count}⇣${behind_count}'
-  modified  = "!${count} "
-  staged    = "+${count} "
-  renamed   = '→${count} '
-  untracked = '?${count} '
-  stashed   = '[ $count](cyan) '
-  deleted   = '[-${count}](red) '
+format     = '[$all_status]($style)'
+style      = "cyan"
+ahead      = "⇡${count} "
+diverged   = "⇕⇡${ahead_count}⇣${behind_count} "
+behind     = "⇣${count} "
+conflicted = " "
+up_to_date = " "
+untracked  = "? "
+modified   = " "
+stashed    = ""
+staged     = ""
+renamed    = ""
+deleted    = ""
+
+[os]
+format = '[$symbol ]($style)'
+disabled = false
+
+[os.symbols]
+Alpine = ''
+Amazon = ''
+Android = ''
+Arch = ''
+CentOS = ''
+Debian = ''
+EndeavourOS = ''
+Fedora = ''
+FreeBSD = ''
+Garuda = ''
+Gentoo = ''
+Linux = ''
+Macos = ''
+Manjaro = ''
+Mariner = ''
+Mint = ''
+NetBSD = ''
+NixOS = ''
+OpenBSD = ''
+OpenCloudOS = ''
+openEuler = ''
+openSUSE = ''
+OracleLinux = '⊂⊃'
+Pop = ''
+Raspbian = ''
+Redhat = ''
+RedHatEnterprise = ''
+Solus = ''
+SUSE = ''
+Ubuntu = ''
+Unknown = ''
+Windows = ''
