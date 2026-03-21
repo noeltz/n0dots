@@ -1,9 +1,12 @@
 #######################################
 # HISTORY CONFIG
 #######################################
+
 HISTSIZE=10000               # number of commands kept in memory
 SAVEHIST=10000               # number of commands saved to file
-HISTFILE=~/.zsh_history      # history file path
+HISTFILE=${HISTFILE:-$ZDOTDIR/.zsh_history}   # history file path
+export HISTSIZE=10000
+export SAVEHIST=10000
 
 setopt APPEND_HISTORY         # append to history file, don't overwrite
 setopt INC_APPEND_HISTORY     # write to history immediately
