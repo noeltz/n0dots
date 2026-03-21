@@ -49,6 +49,7 @@ pacman = [
   "man-db",
   "man-pages",
   "matugen",
+  "mise",
   "neovim",
   "network-manager-applet",
   "networkmanager",
