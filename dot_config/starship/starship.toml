@@ -9,8 +9,8 @@ $git_branch\
 $git_state\
 $git_status\
 $cmd_duration\
-$fill\
-$time\
+$fill \
+$time \
 [─╮](foreground)
 [╰─](foreground)$status$character
 """
@@ -89,7 +89,7 @@ min_time = 1000
 [time]
 disabled = false
 format = "[$time]($style) "
-style = "bright-magenta"
+style = "bright-blue"
 time_format = "%H:%M:%S"
 
 # ------------------------
