@@ -11,6 +11,7 @@ $git_status\
 $cmd_duration\
 $fill \
 $time\
+[─╮](foreground)
 [╰─](foreground)$status$character
 """
 
