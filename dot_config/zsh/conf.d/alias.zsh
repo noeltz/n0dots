@@ -14,7 +14,7 @@ alias cat='bat -pp'
 alias mkdir='mkdir -p'
 alias cd='z'
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
-alias lg='lazygit'
+
 export EDITOR='nvim'
 export BAT_THEME='ansi'
 
