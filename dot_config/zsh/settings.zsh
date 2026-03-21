@@ -14,7 +14,7 @@ ZSH_PLUGIN_FRAMEWORK="zinit"
 
 #  ------|  Prompts  |------  #
 # Supported settings: p10k, starship, oh-my-posh
-ZSH_PROMPT="p10k"
+ZSH_PROMPT="starship"
 
 # Use emacs-style bindings
 # Switch to bindkey -v for vi-style bindings
