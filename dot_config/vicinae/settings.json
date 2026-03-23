@@ -108,7 +108,7 @@
                "enabled": false
             }
          }
-      }
+      },
       "core": {
          "entrypoints": {
             "about": {
