@@ -123,7 +123,31 @@
         <child>
             <object class="GtkSeparatorMenuItem" id="delimiter-1" />
         </child>
+        <child>
+            <object class="GtkMenuItem" id="sysadmin">
+                <property name="label">System Administration</property>
+            <child type="submenu">
+                <object class="GtkMenu">
 
+                    <child>
+                        <object class="GtkMenuItem" id="systemdservices">
+                            <property name="label">Manage Services</property>
+                        </object>
+                    </child>
+                    <child>
+                        <object class="GtkMenuItem" id="wallpaper-select2">
+                            <property name="label">Select Wallpaper2</property>
+                        </object>
+                    </child>
+
+                </object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+            <object class="GtkSeparatorMenuItem" id="delimiter-2" />
+        </child>
         <child>
             <object class="GtkMenuItem" id="theme">
                 <property name="label">Toggle device theme</property>
