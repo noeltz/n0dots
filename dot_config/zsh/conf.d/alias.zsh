@@ -15,7 +15,6 @@ alias mkdir='mkdir -p'
 alias cd='z'
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
-export EDITOR='nvim'
 export BAT_THEME='ansi'
 
 # System Utilities
