@@ -80,7 +80,6 @@ pacman = [
   "starship",
   "swayidle",
   "swaync",
-  "swww",
   "tree",
   "ttf-cascadia-code-nerd",
   "ttf-jetbrains-mono-nerd",
@@ -107,6 +106,7 @@ pacman = [
   "otf-monaspace-nerdfonts"
 ]
 aur = [
+  "awww-bin",
   "bibata-cursor-theme-bin",
   "darkly-bin",
   "downgrade",
