@@ -1,2 +1,3 @@
 spawn-at-startup "reload-portal.sh"
 spawn-at-startup "vicinae" "server"
+spawn-at-startup "walker" "--gapplication-service"
