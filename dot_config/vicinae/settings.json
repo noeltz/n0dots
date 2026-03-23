@@ -21,8 +21,8 @@
       "opacity": 0.98
    },
 	"size": {
-		"width": 770,
-		"height": 680
+		"width": 924,
+		"height": 576
 	},
    "providers": {
       "@sovereign/store.vicinae.awww-switcher": {
