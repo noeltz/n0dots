@@ -19,8 +19,8 @@
    "theme": {
       "dark": {
          "name": "matugen-dark"
-      }
-        "light": {
+      },
+      "light": {
          "name": "matugen-light"
       }
    },
