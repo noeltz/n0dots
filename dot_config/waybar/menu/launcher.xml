@@ -130,13 +130,13 @@
                 <object class="GtkMenu">
 
                     <child>
-                        <object class="GtkMenuItem" id="systemdservices">
+                        <object class="GtkMenuItem" id="sysz">
                             <property name="label">Manage Services</property>
                         </object>
                     </child>
                     <child>
-                        <object class="GtkMenuItem" id="wallpaper-select2">
-                            <property name="label">Select Wallpaper2</property>
+                        <object class="GtkMenuItem" id="tufw">
+                            <property name="label">Manage UFW (Firewall)</property>
                         </object>
                     </child>
 
