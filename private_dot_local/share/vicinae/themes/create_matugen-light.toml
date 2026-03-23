@@ -1,6 +1,0 @@
-[meta]
-version = 1
-name = "Matugen Light"
-description = "Matugen light theme for Vicinae"
-variant = "light"
-inherits = "vicinae-light"
