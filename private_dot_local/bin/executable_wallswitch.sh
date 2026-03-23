@@ -34,9 +34,9 @@ switch_wallpaper() {
   if [[ "$1" != "$(readlink -f "$cache_dir/niri/landing/background")" || "$scheme" ]]; then
     scheme=${scheme:-"scheme-content"}
 
-    # fallback to prefer-light if color-scheme is default
+    # fallback to prefer-dark if color-scheme is default
     if [ "$current_theme" = "'default'" ]; then
-      gsettings set org.gnome.desktop.interface color-scheme prefer-light
+      gsettings set org.gnome.desktop.interface color-scheme prefer-dark
       current_theme="'prefer-light'"
     fi
     if [ "$(matugen -V | awk '{printf $2}' | cut -d. -f1)" -ge 4 ]; then
@@ -67,7 +67,7 @@ switch_wallpaper() {
     else
       systemctl --user restart overview-backdrop.service
     fi
-    swww img -n overview "${swww_args[@]}" "$blur_img"
+    awww img -n overview "${swww_args[@]}" "$blur_img"
   else
     echo "Skipping overview reloading..."
   fi
