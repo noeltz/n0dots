@@ -35,7 +35,7 @@ _uodate_system() {
     upd_args+=(--noconfirm)
     flatpak_args+=(-y)
     post_upd_args+=(-a)
-    echo -e "${ORANGE}===>${NC}  Skipping confirmation prompts..."
+    #echo -e "${ORANGE}===>${NC}  Skipping confirmation prompts..."
   fi
 
   echo -e "${ORANGE}===>${NC}  Beginning system update...\n"
