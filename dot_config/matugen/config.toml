@@ -122,9 +122,15 @@ input_path = '~/.config/matugen/templates/Matugen.colors'
 output_path = '~/.local/share/color-schemes/Matugen.colors'
 post_hook = 'reload-qt.sh &'
 
-[templates.vicinae]
+[templates.vicinae-dark]
 input_path = '~/.config/matugen/templates/vicinae.toml'
-output_path = "~/.local/share/vicinae/themes/matugen.json"
+output_path = "~/.local/share/vicinae/themes/matugen-dark.json"
+post_hook = 'vicinae theme set matugen-{{mode}}'
+
+[templates.vicinae-light]
+input_path = '~/.config/matugen/templates/vicinae.toml'
+output_path = "~/.local/share/vicinae/themes/matugen-light.json"
+post_hook = 'vicinae theme set matugen-{{mode}}'
 
 [templates.zed]
 input_path = '~/.config/matugen/templates/zed-colors.json'
