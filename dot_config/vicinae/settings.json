@@ -33,7 +33,7 @@
    "providers": {
       "@sovereign/store.vicinae.awww-switcher": {
          "preferences": {
-            "wallpaperPath": "~/Pictures/Wallpaper",
+            "wallpaperPath": "Pictures/Wallpaper",
             "colorGenTool": "none",
             "gridRows": "6",
             "postProduction": "no",
@@ -43,7 +43,7 @@
             "transitionFPS": "60",
             "transitionStep": "90",
             "transitionType": "wave",
-            "postCommand": "wallswitch.sh $(awww query -j | jq -r '.[] | .[0].displaying.image')"
+            "postCommand": "wallswitch.sh ${wallpaper}"
          }
       },
       "applications": {
