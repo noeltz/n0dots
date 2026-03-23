@@ -11,7 +11,7 @@ upd_command="pacman" # Fallback when no alternative package managers are detecte
 
 upd_args=(-Syu)
 flatpak_args=(-u --system)
-post_upd_args=(-i "sddm.service" -i "gdm.service" -i "ly@tty2") # Ignore display manager services to avoid nuking the current session
+post_upd_args=(-i "sddm.service" -i "gdm.service" -i "ly@tty2.service") # Ignore display manager services to avoid nuking the current session
 
 _confirm_prompt() {
  SKIP_PROMPT=1
