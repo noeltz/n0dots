@@ -7,5 +7,6 @@ services = [
   "wl-clip-persist",
   "niriusd",
   "wl-paste",
-  "polkit-niri"
+  "polkit-niri",
+  "elephant"
 ]
