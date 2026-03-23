@@ -118,6 +118,7 @@
 			"wallpaper-select": "niri msg action spawn -- waypaper",
 			"record-screen": "screen-record.sh",
 			"record-region": "screen-record.sh region",
+			"systemdservices": "niri msg action spawn -- xdg-terminal-exec --app-id='n0tui_sysz' --title='Systemd Service Manager' sysz",			
 			"theme": "niri msg action spawn -- themechange.sh",
 			"nightlight": "nightlight.sh",
 			"niri": "xdg-open https://github.com/YaLTeR/niri",
