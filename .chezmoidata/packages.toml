@@ -117,6 +117,7 @@ aur = [
   "spicetify-cli",
   "spicetify-marketplace-bin",
   "spotify",
+  "sysz",
   "vesktop-bin",
   "vscodium-bin",
   "vscodium-bin-marketplace",
