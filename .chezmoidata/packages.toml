@@ -28,6 +28,7 @@ pacman = [
   "firefox",
   "fish",
   "flatpak",
+  "fresh-editor",
   "fzf",
   "git",
   "github-cli",
