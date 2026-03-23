@@ -2,7 +2,7 @@
 
 * {
 	all: unset;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "Maple Mono Normal NFPropo, Inter Display, CaskaydiaCove Nerd Font Propo";
 }
 
@@ -16,10 +16,10 @@
 	--control-center-slider-thickness: 5px;
 	--slider-icon-size: 14px;
 
-	--notification-icon-size: 56px;
+	--notification-icon-size: 46px;
 	--notification-app-icon-size: calc(var(--notification-icon-size) / 4);
 	--notification-group-icon-size: 16px;
-	--mpris-album-art-icon-size: 80px;
+	--mpris-album-art-icon-size: 60px;
 }
 
 .close-button {
