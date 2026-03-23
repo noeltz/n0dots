@@ -118,7 +118,7 @@ aur = [
   "elephant-files-bin",
   "elephant-menus-bin",
   "elephant-niriactions-bin",
-  "elephant-nirisession-bin",
+  "elephant-nirisessions-bin",
   "elephant-providerlist-bin",
   "elephant-runner-bin",
   "elephant-symbols-bin",
