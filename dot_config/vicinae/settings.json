@@ -18,10 +18,10 @@
    },
    "theme": {
       "dark": {
-         "name": "matugen-dark"
+         "name": "matugen"
       },
       "light": {
-         "name": "matugen-light"
+         "name": "matugen"
       }
    },
    "telemetry": {
