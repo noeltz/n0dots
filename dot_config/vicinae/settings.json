@@ -20,6 +20,10 @@
    "launcher_window": {
       "opacity": 0.98
    },
+	"size": {
+		"width": 770,
+		"height": 480
+	},
    "providers": {
       "@sovereign/store.vicinae.awww-switcher": {
          "preferences": {
