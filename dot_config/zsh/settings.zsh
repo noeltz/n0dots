@@ -10,7 +10,7 @@ fi
 
 #  ------|  Plugins  |------  #
 # Supported settings: omz, zinit
-ZSH_PLUGIN_FRAMEWORK="zinit"
+ZSH_PLUGIN_FRAMEWORK="sheldon"
 
 #  ------|  Prompts  |------  #
 # Supported settings: p10k, starship, oh-my-posh
