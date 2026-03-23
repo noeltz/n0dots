@@ -11,20 +11,22 @@ upd_command="pacman" # Fallback when no alternative package managers are detecte
 
 upd_args=(-Syu)
 flatpak_args=(-u --system)
-post_upd_args=(-i "sddm.service" -i "gdm.service") # Ignore display manager services to avoid nuking the current session
+post_upd_args=(-i "sddm.service" -i "gdm.service" -i "ly@tty2") # Ignore display manager services to avoid nuking the current session
 
 _confirm_prompt() {
-  local response
-  echo -n -e "Skip confirmation prompts? [y/N] "
-  read -r response
+ SKIP_PROMPT=1
 
-  if [[ "$response" =~ ^[Yy]$ ]]; then
-    SKIP_PROMPT=1
-  elif [[ "$response" =~ ^[Nn]|^\s*$ ]]; then
-    SKIP_PROMPT=0
-  else
-    _confirm_prompt
-  fi
+  #local response
+  #echo -n -e "Skip confirmation prompts? [y/N] "
+  #read -r response
+
+  #if [[ "$response" =~ ^[Yy]$ ]]; then
+  #  SKIP_PROMPT=1
+  #elif [[ "$response" =~ ^[Nn]|^\s*$ ]]; then
+  #  SKIP_PROMPT=0
+  #else
+  #  _confirm_prompt
+  #fi
 }
 
 _uodate_system() {
