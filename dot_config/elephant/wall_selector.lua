@@ -1,3 +1,9 @@
+Name = "n0wall"
+NamePretty = "n0 Background Selector"
+Cache = false
+HideFromProviderlist = false
+SearchName = true
+
 function GetEntries()
 	local entries = {}
 	local home = os.getenv("HOME") or ""
