@@ -1,4 +1,5 @@
 spawn-at-startup "reload-portal.sh"
+spawn-at-startup "awww-daemon"
 spawn-at-startup "vicinae" "server"
 spawn-at-startup "walker" "--gapplication-service"
 spawn-at-startup "hamr"
