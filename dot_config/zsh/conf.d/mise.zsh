@@ -1,2 +1,9 @@
 # Mise (Environment manager for multiple languages)
-eval "$(mise activate zsh)"
+if [[ -x "$(command -v mise)" ]]; then
+  autoload -Uz _mise
+  _mise() {
+    unfunction _mise
+    eval "$(mise activate zsh)"
+    mise "$@"
+  }
+fi
