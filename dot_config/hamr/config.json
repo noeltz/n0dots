@@ -3,15 +3,15 @@
   "appearance": {
     "backgroundTransparency": 0.0,
     "contentTransparency": 0.0,
-    "launcherXRatio": 0.45,
+    "launcherXRatio": 0.5,
     "launcherYRatio": 0.2
   },
   "sizes": {
-    "maxResultsHeight": 700,
-    "searchWidth": 660
+    "maxResultsHeight": 600,
+    "searchWidth": 500
   },
   "imageBrowser": {
-    "columns": 5
+    "columns": 4
   },
   "fonts": {
     "monospace": "Maple Mono Normal NFMono",
@@ -19,5 +19,8 @@
   },
   "behavior": {
     "stateRestoreWindowMs": 5000
+  },
+  "paths": {
+    "wallpaperDir": "~/Pictures/Wallpaper"
   }
 }
