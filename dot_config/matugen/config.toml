@@ -129,7 +129,11 @@ post_hook = 'vicinae theme set matugen'
 
 [templates.walker]
 input_path = '~/.config/matugen/templates/walker.scss'
-output_path = "~/.config/walker/themes/n0_dots/theme.scss"
+output_path = '~/.config/walker/themes/n0_dots/theme.scss'
+
+[templates.hamr_colors]
+input_path = '~/.config/matugen/templates/hamr-colors.json'
+output_path = '~/.config/hamr/colors.json'
 
 [templates.zed]
 input_path = '~/.config/matugen/templates/zed-colors.json'
