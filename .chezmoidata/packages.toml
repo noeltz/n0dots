@@ -127,6 +127,7 @@ aur = [
   "elephant-windows-bin",
   "elephant-wireplumber-bin",
   "gpu-screen-recorder",
+  "hamr-bin",
   "nirius",
   "python-pywalfox",
   "qt6ct-kde",
