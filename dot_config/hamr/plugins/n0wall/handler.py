@@ -25,7 +25,7 @@ HAMR_CONFIG_PATH = XDG_CONFIG / "hamr" / "config.json"
 WALLPAPER_HISTORY_FILE = XDG_CACHE / "hamr" / "wallpaper-history.json"
 PICTURES_DIR = Path.home() / "Pictures"
 DEFAULT_WALLPAPERS_DIR = PICTURES_DIR / "Wallpaper"
-MAX_HISTORY_ITEMS = 10
+MAX_HISTORY_ITEMS = 3
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp"}
 
 
