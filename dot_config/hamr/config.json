@@ -16,5 +16,8 @@
   "fonts": {
     "monospace": "Maple Mono Normal NFMono",
     "main": "Maple Mono Normal NFMono"
+  },
+  "behavior": {
+    "stateRestoreWindowMs": 5000
   }
 }
