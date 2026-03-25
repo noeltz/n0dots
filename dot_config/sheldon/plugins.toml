@@ -8,6 +8,7 @@ github = "zsh-users/zsh-syntax-highlighting"
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
+apply = ["fpath"]
 
 [plugins.fzf-tab]
 github = "Aloxaf/fzf-tab"
