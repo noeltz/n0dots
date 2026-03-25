@@ -1,0 +1,20 @@
+{
+  "type": "execute",
+  "appearance": {
+    "backgroundTransparency": 0.0,
+    "contentTransparency": 1.3877787807814457e-17,
+    "launcherXRatio": 0.45,
+    "launcherYRatio": 0.2
+  },
+  "sizes": {
+    "maxResultsHeight": 700,
+    "searchWidth": 660
+  },
+  "imageBrowser": {
+    "columns": 5
+  },
+  "fonts": {
+    "monospace": "Maple Mono Normal NFMono",
+    "main": "Maple Mono Normal NFMono"
+  }
+}
