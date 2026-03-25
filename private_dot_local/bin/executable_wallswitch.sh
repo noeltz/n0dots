@@ -32,12 +32,12 @@ switch_wallpaper() {
 
   [ ! -d "$cache_dir/niri/landing" ] && mkdir -p "$cache_dir/niri/landing"
   if [[ "$1" != "$(readlink -f "$cache_dir/niri/landing/background")" || "$scheme" ]]; then
-    scheme=${scheme:-"scheme-content"}
+    scheme=${scheme:-"scheme-tonal-spot"}
 
     # fallback to prefer-dark if color-scheme is default
     if [ "$current_theme" = "'default'" ]; then
       gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-      current_theme="'prefer-light'"
+      current_theme="'prefer-dark'"
     fi
     if [ "$(matugen -V | awk '{printf $2}' | cut -d. -f1)" -ge 4 ]; then
       matugen image "$1" -m "$(grep -oe 'light' -oe 'dark' <<<"$current_theme")" --source-color-index 0 -t "$scheme" >/dev/null 2>&1 &
@@ -71,6 +71,7 @@ switch_wallpaper() {
   else
     echo "Skipping overview reloading..."
   fi
+  awww img "${swww_args[@]}" "$1"
 
 }
 
