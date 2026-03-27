@@ -5,6 +5,7 @@ pacman = [
   "archlinux-contrib",
   "ark",
   "aubio",
+  "awww",
   "bat",
   "blueman",
   "bluez",
@@ -106,7 +107,6 @@ pacman = [
   "otf-monaspace-nerdfonts"
 ]
 aur = [
-  "awww-bin",
   "bibata-cursor-theme-bin",
   "darkly-bin",
   "downgrade",
