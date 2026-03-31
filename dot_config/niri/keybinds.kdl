@@ -5,7 +5,7 @@ binds {
   Mod+T repeat=false hotkey-overlay-title="Open a Terminal" { spawn "kitty" "-1"; }
   Mod+Shift+T repeat=false hotkey-overlay-title="Open Dropdown Terminal" { spawn "kitty" "--class" "dropdown" "-1"; }
   // Mod+Space repeat=false hotkey-overlay-title="Open application launcher" { spawn "rofilaunch.sh";  }
-  Mod+Space repeat=false hotkey-overlay-title="Open application launcher" { spawn "hamr" "toggle";  }
+  Mod+Space repeat=false hotkey-overlay-title="Open application launcher" { spawn "walker";  }
   Mod+Alt+C repeat=false hotkey-overlay-title="Clipboard History" { spawn "clipboard.sh" "-c"; }
   Mod+Alt+E repeat=false hotkey-overlay-title="Emoji Picker" { spawn "emoji-picker.sh"; }
   Mod+Alt+G repeat=false hotkey-overlay-title="Glyph Picker" { spawn "glyph-picker.sh"; }
@@ -26,7 +26,7 @@ binds {
   // Nirius specific binds for browser & wallpaper
   Mod+B repeat=false hotkey-overlay-title="Web Browser" { spawn "nirius" "focus-or-spawn" "-a" "zen" "zen-browser"; }
   // Mod+Alt+W repeat=false hotkey-overlay-title="Select Wallpaper" { spawn "nirius" "move-to-current-workspace-or-spawn" "-f" "--include-current-workspace" "-a" "waypaper" "waypaper"; }
-  Mod+Alt+W repeat=false hotkey-overlay-title="Select Wallpaper" { spawn "hamr" "plugin" "n0wall"; }
+  Mod+Alt+W repeat=false hotkey-overlay-title="Select Wallpaper" { spawn "walker" "menus:choose-wallpaper"; }
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn "volumecontrol.sh" "set-sink-volume" "@DEFAULT_SINK@" "+2%"; }
   XF86AudioLowerVolume allow-when-locked=true { spawn "volumecontrol.sh" "set-sink-volume" "@DEFAULT_SINK@" "-2%"; }
