@@ -76,10 +76,7 @@ function GetEntries()
                 Icon = thumb or full_path,
                 Preview = preview_path,
                 PreviewType = "file",
-                Actions = {
-                    activate = scripts .. "wallpaper-bridge.sh '" .. full_path .. "'",
-                    quick_apply = scripts .. "quick-apply-wallpaper.sh '" .. full_path .. "'",
-                },
+
             })
         end
         handle:close()
@@ -87,4 +84,6 @@ function GetEntries()
     return entries
 end
 
-Action = os.getenv("HOME") .. "/.config/elephant/scripts/wallpaper-bridge.sh '%VALUE%'"
+-- Action = os.getenv("HOME") .. "/.config/elephant/scripts/quick-apply-wallpaper.sh '%VALUE%'"
+-- Action = os.getenv("HOME") .. "/.local/bin/wallswitch.sh '%VALUE%'"
+Action = "wallswitch.sh '%VALUE%'"
