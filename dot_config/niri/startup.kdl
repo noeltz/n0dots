@@ -1,2 +1,3 @@
 spawn-at-startup "reload-portal.sh"
-spawn-at-startup "hamr"
+//spawn-at-startup "hamr"
+spawn-at-startup "walker" "--gapplication-service"
