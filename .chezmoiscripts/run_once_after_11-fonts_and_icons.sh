@@ -60,3 +60,8 @@ done
 
 fc-cache -fv
 log INFO "Installed Fonts to $FONT_DIR"
+
+print_box "Icons"
+log STEP "Installing Icons..."
+wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons" sh
+log INFO "Installed Icons
